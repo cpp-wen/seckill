@@ -7,7 +7,6 @@ package com.example.seckill.entity;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.xml.crypto.Data;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;

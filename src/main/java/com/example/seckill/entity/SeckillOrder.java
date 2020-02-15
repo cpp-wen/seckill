@@ -21,8 +21,8 @@ public class SeckillOrder implements Serializable {
     private long userPhone;
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
-    private Date  createTime;
-    private  boolean status;
+    private Date createTime;
+    private boolean status;
     private Seckill seckill;
 
     public long getSeckillId() {

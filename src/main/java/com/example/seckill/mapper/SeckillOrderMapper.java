@@ -19,19 +19,21 @@ public interface SeckillOrderMapper {
 
     /**
      * 插入购买订单明细
+     *
      * @param seckillId
      * @param money
      * @param userPhone
      * @return 返回该sql更新的记录数，如果>=1 则更新成功
      */
-    int insertOrder(@Param("seckillId") long seckillId, @Param("money")BigDecimal money,@Param("userPhone")long userPhone);
+    int insertOrder(@Param("seckillId") long seckillId, @Param("money") BigDecimal money, @Param("userPhone") long userPhone);
 
 
     /**
      * 根据秒杀商品的id查询订单明细数据并得到对应秒杀商品的数据
+     *
      * @param seckillId
      * @param userPhone
      * @return
      */
-    SeckillOrder findById(@Param("seckillId") long seckillId,@Param("userPhone")long userPhone);
+    SeckillOrder findById(@Param("seckillId") long seckillId, @Param("userPhone") long userPhone);
 }

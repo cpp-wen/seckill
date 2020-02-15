@@ -5,8 +5,9 @@
 package com.example.seckill.mapper;
 
 import com.example.seckill.entity.Seckill;
-import io.lettuce.core.dynamic.annotation.Param;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.Date;
 import java.util.List;
 
@@ -18,12 +19,14 @@ import java.util.List;
 public interface SeckillMapper {
     /**
      * 查询所有秒杀商品的信息记录
+     *
      * @return
      */
     List<Seckill> findAll();
 
     /**
      * 根据主键查询当前秒杀商品的数据
+     *
      * @param id
      * @return
      */
@@ -31,9 +34,10 @@ public interface SeckillMapper {
 
     /**
      * 减少库存 对于多个参数的方法需要使用 @Param 注解标识字段名称
+     *
      * @param seckillId
      * @param killTime
      * @return 返回此sql 更新的记录数 ，如果>1 表示更新成功
      */
-    int reduceeStock(@Param("SeckillId") long seckillId, @Param("killTime")Date killTime);
+    int reduceStock(@Param("seckillId") long seckillId, @Param("killTime") Date killTime);
 }
