@@ -12,7 +12,7 @@ import com.example.seckill.enums.SeckillStatEnum;
  * @version : SeckillExecution.java 2020/02/15 21:46 guofan.cp
  */
 public class SeckillExecution {
-    private  Long seckillId;
+    private Long seckillId;
     private int state;
     private String stateInfo;
     private SeckillOrder seckillOrder;

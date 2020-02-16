@@ -21,12 +21,14 @@ import java.util.List;
 public interface SeckillService {
     /**
      * 获取所有秒杀商品列表
+     *
      * @return
      */
     List<Seckill> findAll();
 
     /**
      * 获取某一条商品秒杀信息
+     *
      * @param seckillId
      * @return
      */
@@ -34,6 +36,6 @@ public interface SeckillService {
 
     Exposer exportSeckillUrl(long seckillId);
 
-    SeckillExecution executeSeckill(long seckillId, BigDecimal money,long userPhone,String md5)
+    SeckillExecution executeSeckill(long seckillId, BigDecimal money, long userPhone, String md5)
             throws SeckillException, RepeatKillException, SeckillCloseException;
 }

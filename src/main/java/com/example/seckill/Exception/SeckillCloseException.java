@@ -2,6 +2,7 @@ package com.example.seckill.Exception;
 
 /**
  * 秒杀关闭异常
+ *
  * @auther TyCoding
  * @date 2018/10/8
  */
