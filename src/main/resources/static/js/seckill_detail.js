@@ -20,6 +20,8 @@ var seckill = {
             return false;
         }
     },
+
+
     //处理秒杀逻辑
     handleSeckill: function (seckillId, node, money) {
         //获取秒杀地址，控制显示逻辑，执行秒杀
@@ -61,6 +63,8 @@ var seckill = {
             }
         });
     },
+
+
     //计时
     countdown: function (seckillId, nowTime, startTime, endTime, money) {
         var seckillBox = $('#seckill-box');
@@ -95,6 +99,9 @@ var seckill = {
             });
         }
     },
+
+
+
     //详情页秒杀逻辑
     detail: {
         //详情页初始化

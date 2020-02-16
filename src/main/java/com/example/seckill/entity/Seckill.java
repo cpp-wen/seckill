@@ -18,7 +18,8 @@ import java.util.Date;
 public class Seckill implements Serializable {
     private long seckillId;
     private String title;
-    private String neme;
+    private String name;
+    private String image;
     private BigDecimal price;
     private BigDecimal costPrice;
 
@@ -43,7 +44,7 @@ public class Seckill implements Serializable {
         return "Seckill{" +
                 "seckillId=" + seckillId +
                 ", title='" + title + '\'' +
-                ", neme='" + neme + '\'' +
+                ", neme='" + name + '\'' +
                 ", price=" + price +
                 ", costPrice=" + costPrice +
                 ", createTime=" + createTime +
@@ -51,6 +52,15 @@ public class Seckill implements Serializable {
                 ", endTime=" + endTime +
                 ", stockCount=" + stockCount +
                 '}';
+    }
+
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public long getSeckillId() {
@@ -69,12 +79,12 @@ public class Seckill implements Serializable {
         this.title = title;
     }
 
-    public String getNeme() {
-        return neme;
+    public String getName() {
+        return name;
     }
 
-    public void setNeme(String neme) {
-        this.neme = neme;
+    public void setName(String neme) {
+        this.name = neme;
     }
 
     public BigDecimal getPrice() {
