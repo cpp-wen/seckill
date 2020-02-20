@@ -22,19 +22,19 @@ public class SeckillExecution {
         this.seckillId = seckillId;
         this.state = state.getState();
         this.seckillOrder = seckillOrder;
-        this.stateInfo=SeckillStatEnum.stateOf(this.state).getStateInfo();
+        this.stateInfo = SeckillStatEnum.stateOf(this.state).getStateInfo();
     }
 
     public SeckillExecution(Long seckillId, SeckillStatEnum state) {
         this.seckillId = seckillId;
         this.state = state.getState();
-        this.stateInfo=SeckillStatEnum.stateOf(this.state).getStateInfo();
+        this.stateInfo = SeckillStatEnum.stateOf(this.state).getStateInfo();
     }
 
     public SeckillExecution(Long seckillId, SeckillStatEnum state, String stateInfo, SeckillOrder seckillOrder) {
         this.seckillId = seckillId;
         this.state = state.getState();
-        this.stateInfo=SeckillStatEnum.stateOf(this.state).getStateInfo();
+        this.stateInfo = SeckillStatEnum.stateOf(this.state).getStateInfo();
         this.seckillOrder = seckillOrder;
     }
 
